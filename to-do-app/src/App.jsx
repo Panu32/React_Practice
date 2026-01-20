@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import FirstComponent from './Components/firstComponent.jsx';
 // let x= "Pranav"
 // let arr= ["user1","user2","user3"]
 
@@ -20,8 +20,9 @@ const App = () => {
 
       {/* {data=="Boy" ? <h1>Boy</h1>: <h1> Girl</h1>} */}
 
-      {x}
+
       <button onClick={() => { btnClick() }}>Click me</button>
+      <FirstComponent data={x} fn={setx} />
     </div>
   )
 }
